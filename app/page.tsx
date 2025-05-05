@@ -33,7 +33,7 @@ export default function RedirectPage() {
   if (!mounted) return null;
 
   return (
-    <div className="relative flex h-[100dvh] w-full flex-col overflow-hidden bg-gradient-to-br from-blue-50 via-white to-blue-50">
+    <div className="relative flex min-h-[100dvh] w-full flex-col bg-gradient-to-br from-blue-50 via-white to-blue-50">
       {/* Background pattern - health related */}
       <div className="relative flex h-full w-full flex-col justify-center ">
         <header className="flex justify-center">
@@ -94,7 +94,7 @@ export default function RedirectPage() {
                       src="/images/sempre-sorrindo-logo.png"
                       alt="Logo Sempre Sorrindo"
                       fill
-                      className="transition-transform duration-300 group-hover:scale-105"
+                      className="object-contain transition-transform duration-300 group-hover:scale-105"
                       priority
                     />
                   </figure>
@@ -149,7 +149,7 @@ export default function RedirectPage() {
                       src="/images/sempre-visao-logo.png"
                       alt="Logo Sempre Sorrindo"
                       fill
-                      className="h-auto max-h-full w-auto transition-transform duration-300 group-hover:scale-105"
+                      className="h-auto object-contain max-h-full w-auto transition-transform duration-300 group-hover:scale-105"
                       priority
                     />
                   </figure>
